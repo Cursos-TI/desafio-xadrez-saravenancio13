@@ -4,6 +4,7 @@ int main(){
 
     int i = 0;
     int r = 0;
+    int movimentoCompleto = 1; //flag para controlar o movimento em "L";
 
     //Mover a Torre 5 casas para a direita
     printf("Movimentando a Torre...\n");
@@ -29,6 +30,17 @@ int main(){
         printf("Esquerda\n");
         r++;
     } while (r < 8);
+
+    //Mover o Cavalo em "L"
+    printf("Movimentando o Cavalo...\n");
+
+    while (movimentoCompleto--)
+    {
+        for (int i = 0; i <2; i++){
+            printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
